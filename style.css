@@ -189,3 +189,27 @@ body {
     width: 2rem;
     height: 2rem;
 }
+
+.announcement {
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    gap: 1rem;
+}
+
+.announc-cards {
+    background-color: #E2E8CE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+
+    border: 2px solid #262626;
+}
+
+.announc-cards {
+    flex: 1;
+}
+
+.announc-cards .message:not(:last-of-type) {
+    border-bottom: 1px solid #262626;
+}
