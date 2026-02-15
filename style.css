@@ -173,6 +173,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+
+    border-radius: 1rem;
 }
 
 .project-card p {
@@ -196,7 +198,7 @@ body {
     gap: 1rem;
 }
 
-.announc-cards {
+.announc-card {
     background-color: #E2E8CE;
     display: flex;
     flex-direction: column;
@@ -204,12 +206,50 @@ body {
     padding: 1rem;
 
     border: 2px solid #262626;
+    border-radius: 1rem;
 }
 
-.announc-cards {
+.announc-card {
     flex: 1;
 }
 
-.announc-cards .message:not(:last-of-type) {
-    border-bottom: 1px solid #262626;
+.announc-card .message:not(:first-of-type) {
+    padding-top: 1rem;
+    border-top: 1px solid #262626;
 }
+
+.trending {
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+}
+
+.trending-card {
+    background-color: #E2E8CE;
+
+    border: 2px solid #262626;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.person img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border: 3px solid #FF7F11;
+    border-radius: 50%;
+}
+
+.person:not(:last-of-type) {
+    padding-bottom: 0.2rem;
+}
+
