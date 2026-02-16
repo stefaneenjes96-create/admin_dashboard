@@ -61,6 +61,15 @@ body {
     gap: 1rem;
 }
 
+.sidebar ul li p {
+    margin: 0;
+}
+
+.sidebar ul li p:hover {
+    color: #E2E8CE;
+    cursor: pointer;
+}
+
 .sidebar ul li:not(:last-of-type) {
     margin-bottom: 1rem;
 }
@@ -85,6 +94,7 @@ body {
     width: 1.2rem;
     height: 1.2rem;
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 
 .header .search-bar {
@@ -103,7 +113,7 @@ body {
 .header-top-right {
     display: flex;
     font-size: 1.5rem;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 1rem;
 }
@@ -145,6 +155,11 @@ body {
     cursor: pointer;
 }
 
+.header-bottom-right button:hover {
+    color: #E2E8CE;
+    box-shadow: 1px 1px 1px #262626;
+}
+
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -155,7 +170,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, fr));
     grid-template-rows: 2rem 1fr 1fr 1fr;
     gap: 1rem;
 
@@ -175,6 +190,7 @@ body {
     padding: 2rem;
 
     border-radius: 1rem;
+    box-shadow: 4px 2px 4px #FF7F11;
 }
 
 .project-card p {
@@ -185,11 +201,17 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    gap: 1rem;
+}
+
+.project-options .icon:hover {
+    filter: invert(50%) sepia(90%) saturate(2000%) hue-rotate(20deg) brightness(100%) contrast(100%);
 }
 
 .project-options .icon {
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 .announcement {
@@ -231,6 +253,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     padding: 1rem;
 }
@@ -242,14 +265,11 @@ body {
 }
 
 .person img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
 
     border: 3px solid #FF7F11;
     border-radius: 50%;
 }
 
-.person:not(:last-of-type) {
-    padding-bottom: 0.2rem;
-}
 
